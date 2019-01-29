@@ -1,0 +1,43 @@
+.small{
+  font-size: 1.5ex;
+}
+.voting{
+  text-align: center;
+}
+.subtitle{
+  border-bottom: 1px solid #dd2578;
+}
+.submissionFormDiv{
+    padding: 10px;
+    border: 2px solid #dd2578;
+    margin: 5px;
+}
+.links-table{
+  width: 90%;
+}
+.main{
+  width: 100%;
+}
+.right-align{
+  float: right;
+}
+
+.container{
+	background-color: lightgrey;
+}
+.upvoted{
+    color: orange;
+}
+.downvoted{
+    color: blue;
+}
+
+#navigation{
+	margin: 10px auto;
+	background-color: #dd2578;
+}
+#navigation a{
+	color: #000000;
+	text-align: center;
+	vertical-align: middle;
+}

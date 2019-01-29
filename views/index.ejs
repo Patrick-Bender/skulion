@@ -1,0 +1,59 @@
+<%- include partials/header.ejs %>
+	
+	<div class = "container">
+		<div class = "row">
+			<div class = "col col-sm-9">
+	  		    <table class = "links-table">
+	  		    	<% postData.slice(0, 25).forEach(function(postData){ %>
+	  		    		<tr>
+	        	    		<td rowspan = "2" class = "voting">
+			          	      <i class="fas fa-volume-up"></i>
+			          	      <br>
+			          	      <i class="fas fa-volume-down"></i>
+			          	    </td>
+			          	    <td>
+			          	      <a href = "<%= postData.link %>"><%= postData.title %></a>
+			          	    </td>
+		          		</tr>
+		          		<tr class = "small subtitle">
+			          	    <td>
+			          	      submitted by
+			          	      <a href = "<%= 'u/:' + postData.username %>" class = "username"><%= postData.username %></a>
+			          	      with
+			          	      <%= postData.votes %> votes
+			          	    </td>
+		          	   </tr>
+	  		    	<% }) %>
+	  		    	<tr>
+	  		    		<td>
+	  		    			<a href = "/:1">View more</a>
+	  		    		</td>
+	  		    	</tr>
+	      		</table>
+	      	</div>
+	      	<div class = "col col-sm-3">
+		      	 <div class = "guidelines">
+		      	 	<h6><strong>Our promises to you</strong></h6>
+		      	 	<ol>
+		      	 		<li>No ads. Ever.</li>
+		      	 		<li>We will never share any of your data with a third party.</li>
+		      	 		<li>No brands or companies allowed.</li>
+		      	 		<li>All bots will be terminated with extreme prejudice.</li>
+		      	 	</ol>
+		      	 	<br>
+		      	 	<h6><strong>Your promises to us</strong></h6>
+		      	 	<ol>
+		      	 		<li>Behave like you are talking to someone face to face.</li>
+		      	 		<li>Participate in the community.</li>
+		      	 		<li>Only upvote and post quality content or discussions.</li>
+		      	 		<li>Assume other people are acting in good faith.</li>
+		      	 	</ol>
+		      	 	<br>
+		      	 	<p>Like this site? Your donations keep us running!</p>
+		      	 </div>
+	      	</div>
+      	</div>
+	</div>
+
+	
+<%- include partials/footer.ejs %>

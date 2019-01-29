@@ -1,0 +1,17 @@
+<%- include partials/header.ejs %>
+
+<div class = "container submissionFormDiv">
+    <form action = "/submit" method = "POST">
+        <input type = "text" name = "title" placeholder = "title">
+        <br>
+        <input type = "url" name = "link" placeholder = "link">
+        <br>
+        <input type = "text" name = "username" placeholder = "username">
+        <br>
+        <input type = "text" name = "votes" placeholder = "votes">
+        <br>
+        <input type = "submit" value = "Save Post">
+    </form>
+</div>
+
+<%- include partials/footer.ejs %>
